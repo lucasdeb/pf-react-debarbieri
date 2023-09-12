@@ -1,2 +1,3 @@
-# create-react-app Minimal Template
-# pf-react-debarbieri
+Primer pre-entrega para el curso de React.js de Coderhouse
+
+Hecho por Lucas Debarbieri
