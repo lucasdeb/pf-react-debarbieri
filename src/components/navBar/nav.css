@@ -2,31 +2,50 @@ nav {
     background-color: #3993DD;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center; /* Adjusted to vertically center align items */
     position: sticky;
     top: 0;
+    padding: 0.5rem 2%; /* Added padding */
 }
+
 .nombre-ecommerce {
     color: #FFF9EF;
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: bold;
-    padding: 0.5rem;
 }
 
-nav ul {
+ul {
     display: flex;
+    gap: 1rem; /* Added for better spacing between links */
+    align-items: center; /* Adjusted to vertically center align items */
+    padding: 0; /* Removed padding */
 }
 
-nav ul li{
-    list-style: none;
-    padding: 0.5rem;
-}
-
-nav ul li a{
-    display: block;
+.nav-categoria-links {
+    color: #FFF9EF;
     text-decoration: none;
     font-weight: bold;
-    color: #FFF9EF;
-    margin: 0.5rem;
+    position: relative;
+}
+
+.nav-categoria-links:hover {
+    color: #eaeaea;
+}
+
+.nav-categoria-links::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF9EF;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-categoria-links:hover::before {
+    visibility: visible;
+    width: 100%;
 }

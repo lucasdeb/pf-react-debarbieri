@@ -7,11 +7,11 @@ const navBar = () => {
         <nav>
             <Link to='/' className='nombre-ecommerce'>NOVA</Link>
             <ul>
-                <NavLink to={`/categoria/remeras`}>Remeras</NavLink>
-                <NavLink to={`/categoria/buzos`}>Buzos</NavLink>
-                <NavLink to={`/categoria/pantalones`}>Pantalones</NavLink>
-                <NavLink to={`/categoria/gafas`}>Gafas</NavLink>
-                <li><CartWidget /></li>
+                <NavLink to={`/categoria/remeras`} className='nav-categoria-links'>Remeras</NavLink>
+                <NavLink to={`/categoria/buzos`} className='nav-categoria-links'>Buzos</NavLink>
+                <NavLink to={`/categoria/pantalones`} className='nav-categoria-links'>Pantalones</NavLink>
+                <NavLink to={`/categoria/gafas`} className='nav-categoria-links'>Gafas</NavLink>
+                <CartWidget />
             </ul>
         </nav>
     )

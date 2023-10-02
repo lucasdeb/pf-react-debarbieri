@@ -12,7 +12,7 @@ export const getProducts = () => {
 export const getProductsByCategoria = (categoriaId) => {
     return new Promise((resolve) => 
     {setTimeout(() => {
-        resolve(products.map(prod => prod.categoria === categoriaId))
+        resolve(products.filter(prod => prod.categoria === categoriaId))
     }, 300)})
 }
 
