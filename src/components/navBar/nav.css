@@ -49,3 +49,7 @@ ul {
     visibility: visible;
     width: 100%;
 }
+
+.nav-categoria-links-cart {
+    text-decoration: none;
+}

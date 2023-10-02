@@ -12,8 +12,9 @@ const ItemDetail = ({id, name, img, categoria, descripcion, precio, stock}) => {
             </picture>
             <section className="item-section">
                 <p className="item-categoria">Categoria: {categoria}</p>
-                <p className="item-descripcion">Descripcion: {descripcion}</p>
                 <p className="item-precio">Precio: ${precio}</p>
+                <p className="item-precio">Stock Disponible: ${stock}</p>
+                <p className="item-descripcion">Descripcion: {descripcion}</p>
             </section>
             <footer className="item-footer">
                 <ItemCount 

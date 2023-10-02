@@ -22,14 +22,14 @@
 
 .item-picture {
     display: block;
-    margin: 0 auto;
+    text-align: center;
     padding: 10px;
 }
 
 .item-image {
     display: block;
     max-width: 100%;
-    height: auto;
+    margin: 0 auto;
     
 }
 
