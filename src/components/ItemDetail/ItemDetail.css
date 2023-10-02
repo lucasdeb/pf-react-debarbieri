@@ -1,0 +1,54 @@
+.item-article {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 300px;
+    margin: 15px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.item-header {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.item-picture {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.item-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.item-section {
+    padding: 10px;
+}
+
+.item-categoria,.item-descripcion,.item-precio {
+    margin: 8px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.item-footer {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-count {
+    display: inline-block;
+}

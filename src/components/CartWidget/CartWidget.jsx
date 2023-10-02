@@ -1,4 +1,5 @@
 import cart from './cart.svg';
+import './cartWidget.css';
 
 
 const CartWidget = () => {
