@@ -1,5 +1,50 @@
+/* The overall container for the cart widget */
 .cart-widget {
-    background-color: #FFF9EF;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    position: relative;    /* Make it relative to place the quantity over the cart icon */
+    display: inline-block; /* By default, it will be inline but can be set to none if no items */
+    padding: 10px;
+    text-decoration: none;
+    transition: transform 0.3s; /* Add a small transition effect for better UX */
+}
+
+/* Add a hover effect to give feedback to the user */
+.cart-widget:hover {
+    transform: scale(1.1); /* On hover, scale the cart widget a bit for emphasis */
+}
+
+/* The cart icon */
+.cart-widget img {
+    width: 20px;      /* Adjust based on your design preference */
+    height: 20px;
+    display: block;   /* Makes sure the image takes the full space without affecting surrounding elements */
+    color: #ffffff;
+}
+
+/* Styling the total quantity */
+.cart-widget p {
+    position: absolute;   /* Absolute position to place it over the cart icon */
+    top: -5px;            /* Adjust as needed to perfectly place over the cart icon */
+    right: -5px;
+    background-color: #ffffff;  /* A red background for emphasis */
+    color: #000000;          /* White text for readability */
+    border-radius: 50%;   /* Makes it circular */
+    width: 20px;          /* Fixed width and height to make it a perfect circle */
+    height: 20px;
+    text-align: center;   /* Center the quantity number */
+    font-size: small;
+    line-height: 15px;    /* Center the quantity number vertically */
+    border: 2px solid #393737; /* A white border to make it pop from the cart icon */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* A small shadow for depth */
+}
+
+/* Making sure the widget hides when there's no item in the cart */
+.cart-widget[style*="display: none"] {
+    display: none !important; /* This will override any inline styles that might try to display it */
+}
+
+/* ... existing styles ... */
+
+/* Hide the widget when there's no item in the cart */
+.cart-widget.hidden {
+    display: none;
 }
