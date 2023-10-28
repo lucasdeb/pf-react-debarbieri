@@ -1,4 +1,3 @@
-/* Container for each cart item */
 .cart-item-container {
     border: 1px solid #e0e0e0; 
     margin: 10px 0;
@@ -12,20 +11,17 @@
     background-color: #f0f0f0;
 }
 
-/* Styles for the item name */
 .cart-item-name {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Styling the price and quantity details */
 .cart-item-details p {
     margin: 5px 0;
     color: #555;
 }
 
-/* Positioning the remove button on the top-right corner */
 .cart-item-remove-btn {
     position: absolute;
     top: 10px;

@@ -1,50 +1,42 @@
-/* The overall container for the cart widget */
 .cart-widget {
-    position: relative;    /* Make it relative to place the quantity over the cart icon */
-    display: inline-block; /* By default, it will be inline but can be set to none if no items */
+    position: relative;
+    display: inline-block;
     padding: 10px;
     text-decoration: none;
-    transition: transform 0.3s; /* Add a small transition effect for better UX */
+    transition: transform 0.3s;
 }
 
-/* Add a hover effect to give feedback to the user */
 .cart-widget:hover {
-    transform: scale(1.1); /* On hover, scale the cart widget a bit for emphasis */
+    transform: scale(1.1);
 }
 
-/* The cart icon */
 .cart-widget img {
-    width: 20px;      /* Adjust based on your design preference */
+    width: 20px;
     height: 20px;
-    display: block;   /* Makes sure the image takes the full space without affecting surrounding elements */
+    display: block;
     color: #ffffff;
 }
 
-/* Styling the total quantity */
 .cart-widget p {
-    position: absolute;   /* Absolute position to place it over the cart icon */
-    top: -5px;            /* Adjust as needed to perfectly place over the cart icon */
+    position: absolute;
+    top: -5px;
     right: -5px;
-    background-color: #ffffff;  /* A red background for emphasis */
-    color: #000000;          /* White text for readability */
-    border-radius: 50%;   /* Makes it circular */
-    width: 20px;          /* Fixed width and height to make it a perfect circle */
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    width: 20px;
     height: 20px;
-    text-align: center;   /* Center the quantity number */
+    text-align: center;
     font-size: small;
-    line-height: 15px;    /* Center the quantity number vertically */
-    border: 2px solid #393737; /* A white border to make it pop from the cart icon */
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* A small shadow for depth */
+    line-height: 15px;
+    border: 2px solid #393737;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Making sure the widget hides when there's no item in the cart */
 .cart-widget[style*="display: none"] {
-    display: none !important; /* This will override any inline styles that might try to display it */
+    display: none !important;
 }
 
-/* ... existing styles ... */
-
-/* Hide the widget when there's no item in the cart */
 .cart-widget.hidden {
     display: none;
 }
