@@ -7,17 +7,16 @@ import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
     
-    const { cart } = useContext(CartContext);
+    const {totalQuantity} = useContext(CartContext);
 
-    const totalQuantity = Array.isArray(cart) ? cart.reduce((total, item) => total + (item?.quantity || 0), 0) : 0;
+    console.log(totalQuantity())
 
-    // Use a CSS class to control the visibility of the widget rather than inline styles
-    const visibilityClass = totalQuantity > 0 ? '' : 'hidden';
+    const visibilityClass = totalQuantity() > 0 ? '' : 'hidden';
 
     return (
         <Link to='/cart' className={`cart-widget ${visibilityClass}`}>
             <img src={cartImg} alt="cart-widget" />
-            <p>{totalQuantity}</p>
+            <p>{totalQuantity()}</p>
         </Link>
     )
 }
