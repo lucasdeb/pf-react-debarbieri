@@ -41,7 +41,7 @@ const Checkout = () => {
             }
         
             if (outOfStock.length > 0) {
-                throw new Error(`The following products are out of stock: ${outOfStock.join(', ')}`);
+                throw new Error(`Hay productos sin stock: ${outOfStock.join(', ')}`);
             }
 
             await batch.commit();
