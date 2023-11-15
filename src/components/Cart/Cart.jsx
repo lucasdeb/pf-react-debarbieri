@@ -8,17 +8,17 @@ const Cart = () => {
 
     const {cart, clearCart, totalQuantity, cartTotal} = useContext(CartContext)
 
-    if(totalQuantity === 0){
+    if(totalQuantity() === 0){
         return(
             <div className="empty-cart-container">
                 <p className="empty-cart-message">Carrito vacio... A compraaar</p>
-                <Link to='/' className="empty-cart-link">Productos</Link>
+                <Link to='/' className="counter-button">Productos</Link>
             </div>
         )
     }
-
-    return (
-        <div className="cart-container">
+    else{
+        return (
+            <div className="cart-container">
             <div className="cart-items-list">
                 { cart.map(item => <CartItem key={item.id} item={item} />)}
             </div>
@@ -27,6 +27,7 @@ const Cart = () => {
             <Link to='/checkout' className="checkout-link">Checkout</Link>
         </div>
     )
+    }
 }
 
 export default Cart;
